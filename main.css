@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.featureCard:hover .featureCardIcon {
+    background-image: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+    box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+  }
+  
+  .featureCard:hover .featureCardSVG {
+    filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+    stroke-opacity: 0 !important;
+  }
+  
+  .featureCard:hover .featureCardBox {
+    background-image: url('/images/features-wave.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 1rem right;
+  }
+
+  .feature2bg{
+    background-image: url('/images/feature-section-2BG.svg');
+    background-repeat: no-repeat;
+   background-size:cover;
+  }
+
+ 
+  .featureCard2:hover .featureCardBox {
+    background-image: url('/images/features2-wave.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 1rem right;
+  }
+  
+  .featureCard2:hover .featureCardSVG {
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+    stroke-opacity: 0 !important;
+  }
+  
+  .featureCard2:hover .featureCardIcon {
+    background-image: linear-gradient(188.57deg, #2095ff -16.05%, #6416ff 116.32%);
+    box-shadow: 0px 2px 24px rgb(0 0 0 / 40%);
+    transition: all 200ms ease-in-out;
+  }
+  .corefeaturesection{
+    background-size: 100% 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .moveImage{
+    animation: movecompanies 10s linear infinite;
+  }
+  @keyframes movecompanies {
+ 0%{
+  top: 0;
+ }
+ 100%{
+  top: -160%;
+ }
+    
+  }
+  .ctaSection{
+    background-size: 100% 100%;
+
+  }
+  @media(max-width: 1000px) {
+    .corefeaturesection {
+      background-size: 2000px 100%;
+      padding-top: 13rem;
+      padding-bottom: 12rem;
+    }
+    .ctaSection{
+      background-size: 200% 100%;
+    }
+  }
+  @media (max-width:450px) {
+    .cta-mobile-text{
+      font-size: 0.70rem;
+    }
+    .cta-mobile-button{
+      padding: 0.4rem;
+    }
+    .feature-section2-ul{
+      font-size: .81rem;
+    }
+    .testimonial-image{
+      height: 225px;
+      width: 225px;
+
+    }
+    .buttons-testimonial{
+      top: 35%;
+    }
+    
+  }
+  @media (max-width:380px) {
+    .cta-mobile-text{
+      font-size: 0.60rem;
+    }
+    .cta-mobile-button{
+      font-size: 0.60rem;
+
+      padding: 0.3rem;
+    }
+    .feature-section2-ul{
+      font-size: .61rem;
+    }
+    .ctaSection{
+      background-size: 250% 100%;
+    }
+  }
+  
